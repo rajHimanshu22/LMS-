@@ -23,10 +23,7 @@ database.connect();
 app.use(express.json());
 app.use(cookieParser());
 app.use (
-    cors({
-        origin: "https://localhost:3000",//yaha se jo request aa rha hai usko entertain kro
-        credentials:true,//read more on this
-    })
+    cors()
 )
 
 app.use(
